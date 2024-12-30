@@ -1,6 +1,7 @@
 ---
 
 ---
+<header>
     <div class="main-nav">
         <div class="wrap-left">
             <div class="image-container">
@@ -22,8 +23,7 @@
             </a>
         </div>
     </div>
-<div class="second-nav">
-    <nav>
+    <nav class="second-nav">
         <div class="second-nav-item">
             <a>
                 <div class="nav-text">News</div>
@@ -55,7 +55,7 @@
             </a>
         </div>
     </nav>
-</div>
+</header>
 
 <script>
     // Fetch server data
@@ -178,25 +178,12 @@ window.addEventListener("load", fetchData);
         margin:0;
         background-color: rgba(9, 4, 0, 0.45);
         position: relative;
-        max-height: 20px;
+        min-height: 100%;
         max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 50px;
-        z-index: 3;
-        overflow-x: visible;
-        text-align: center;
-    }
-
-    .second-nav nav {
-        position: relative;
-        max-height: 20px;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50px;
+        max-height: 50px;
         z-index: 3;
         overflow-x: visible;
         text-align: center;
@@ -218,6 +205,7 @@ window.addEventListener("load", fetchData);
         align-items: center;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+        max-height: 50px;
     }
 
     .second-nav-item a:hover {
@@ -254,7 +242,6 @@ window.addEventListener("load", fetchData);
         word-spacing: 0px;
         transform: translateY(5px);
         transition: transform 0.5s ease-in-out;
-        margin-left: -20px;
     }
 
     .other {

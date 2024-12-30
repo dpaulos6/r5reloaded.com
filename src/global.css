@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Panton-Trial-Regular";
+  src: url("/fonts/Panton-Trial-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton-Trial-Bold";
+  src: url("/fonts/Panton-Trial-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton-Trial-Light";
+  src: url("/fonts/Panton-Trial-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Panton-Trial-Black";
+  src: url("/fonts/Panton-Trial-Black.woff") format("woff");
+}
+
+@layer base {
+  .font-panton {
+    font-family: "Panton-Trial-Regular", sans-serif;
+  }
+  .font-panton-black {
+    font-family: "Panton-Trial-Black", sans-serif;
+  }
+  .font-panton-light {
+    font-family: "Panton-Trial-Light", sans-serif;
+  }
+  .font-panton-bold {
+    font-family: "Panton-Trial-Bold", sans-serif;
+  }
+
+  body {
+    @apply text-white ;
+  }
+}

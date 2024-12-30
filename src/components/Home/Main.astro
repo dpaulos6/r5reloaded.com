@@ -2,92 +2,11 @@
 
 ---
 
-<div class="bg">
+<div class="bg-cover bg-center bg-no-repeat bg-main-pattern min-h-screen">
     <slot/>
-    <div class="content">
-        <img class="animated-fade-in animated-size-in" src="./img/R5R-Logo-White.gif" alt="logo">
-        <h1>R5Reloaded</h1>
-        <p class="animate-down">Still figuring out what would be some better text to put here</p>
+    <div class="flex justify-center items-center flex-col text-center">
+        <img class="max-w-60 w-1/2 animated-fade-in animated-size-in" src="/img/R5R-Logo-White.gif" alt="logo">
+        <span class="font-panton-black text-r5-title font-black tracking-widest leading-none uppercase">R5Reloaded</span>
+        <p class="text-[1.1rem] font-extralight tracking-wide animate-down">Still figuring out what would be some better text to put here</p>
     </div>
 </div>
-
-<style>
-
-    @keyframes fadeIn {
-        0% {
-            transform: scale(0.75);
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes floatDownFadeIn {
-        10% {
-            opacity: 0;
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    .animated-fade-in {
-        opacity: 0;
-        animation: fadeIn 1s ease-in-out forwards;
-    }
-
-    .animate-down {
-        opacity: 0;
-        transform: translateY(-35px);
-        animation: floatDownFadeIn 1s ease-out forwards;
-    }
-
-    .bg {
-        height: calc(100px + 100vh);
-        margin-bottom: -150px;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to top, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0)), url(./img/bg.jpg);
-    }
-
-    .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 60%;
-        color: white;
-        text-align: center;
-    }
-
-    .content img {
-        max-width: 250px;
-        width: 50%;
-    }
-
-    .content h1 {
-        color:white;
-        font-family: 'Panton-Trial-Black', sans-serif;
-        font-size: clamp(2rem, 10vw, 3.15rem);
-        font-weight: 900;
-        letter-spacing: 2.4px;
-        text-decoration: none solid rgb(255, 255, 255);
-        text-transform: uppercase;
-        word-spacing: 0px;
-        margin: 0px;
-    }
-
-    .content p {
-        color:white;
-        font-family: 'Panton-Trial-Regular', sans-serif;
-        font-size: 1.1rem;
-        font-weight: 200;
-        letter-spacing: 0.75px;
-        text-decoration: none solid rgb(255, 255, 255);
-        word-spacing: 0px;
-        margin: 0px;
-    }
-</style>
